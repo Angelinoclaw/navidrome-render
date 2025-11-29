@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: navidrome
+    env: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: ND_ADDRESS
+        value: 0.0.0.0
